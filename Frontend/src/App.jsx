@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/data')
+    fetch('https://test-1zpl.onrender.com/api/data')
       .then(res => res.json())
       .then(json => setData(json.message))
       .catch(err => console.error('Error fetching data:', err));
